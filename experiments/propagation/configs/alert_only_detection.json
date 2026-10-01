@@ -1,0 +1,11 @@
+{
+  "name": "ALERT_ONLY_DETECTION",
+  "gateway": false,
+  "inter_agent": false,
+  "tool_security": false,
+  "semantic": true,
+  "provenance": false,
+  "policy_mode": "score_threshold",
+  "alert_only": true,
+  "notes": "Detection-only arm: decisions are computed and recorded but nothing is ever blocked, separating detector quality from mitigation."
+}

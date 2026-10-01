@@ -1,0 +1,17 @@
+{
+  "dataset_name": "post_remediation_final_v1",
+  "dataset_file": "post_remediation_final_v1.json",
+  "sha256": "082fa20325899b7828bf04b1e183fc37e2a10058336dd1d505adce4620868ee5",
+  "samples": 16,
+  "groups": {
+    "benign_hard_negative": 6,
+    "direct_prompt_injection": 2,
+    "indirect_prompt_injection": 2,
+    "obfuscated_injection": 1,
+    "poisoned_inter_agent_output": 1,
+    "poisoned_tool_output": 1,
+    "tool_argument_abuse": 3
+  },
+  "provenance": "Authored after Phase 18.2 for independent post-remediation measurement; not used for calibration or tuning.",
+  "frozen": true
+}

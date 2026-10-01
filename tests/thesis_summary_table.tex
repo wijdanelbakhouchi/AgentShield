@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\caption{\textbf{AgentShield Thesis Empirical Evaluation Summary (N=300)}}
+\label{tab:agentshield_metrics}
+\begin{tabular}{llcc}
+\hline
+\textbf{Metric Category} & \textbf{Evaluation Metric} & \textbf{Target} & \textbf{AgentShield Result} \\ \hline
+\multirow{4}{*}{Classification Performance} 
+ & Precision & $>$ 95.0\% & \textbf{100.00\%} \\
+ & Recall & $>$ 90.0\% & \textbf{90.50\%} \\
+ & F1-Score & $>$ 90.0\% & \textbf{95.01\%} \\
+ & False Positive Rate (FPR) & $<$ 2.0\% & \textbf{0.00\%} \\ \hline
+\multirow{3}{*}{Latency Overhead (ms)} 
+ & P50 Latency Overhead & $<$ 50.0 ms & \textbf{15.45 ms} \\
+ & P95 Latency Overhead & $<$ 100.0 ms & \textbf{16.09 ms} \\
+ & P99 Latency Overhead & $<$ 200.0 ms & \textbf{16.43 ms} \\ \hline
+\multirow{3}{*}{A/B Efficacy Mitigation} 
+ & Baseline Vulnerability Execution & -- & 100.00\% \\
+ & Protected Vulnerability Execution & $<$ 10.0\% & \textbf{9.50\%} \\
+ & Attack Mitigation Efficacy & $>$ 90.0\% & \textbf{90.50\%} \\ \hline
+\end{tabular}
+\end{table}

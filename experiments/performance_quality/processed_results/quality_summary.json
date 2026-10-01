@@ -1,0 +1,174 @@
+{
+  "configurations": {
+    "BASELINE_NO_AGENTSHIELD": {
+      "dimensions": {
+        "completeness": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        },
+        "factuality": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        },
+        "helpfulness": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        },
+        "relevance": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        },
+        "task_success": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        }
+      },
+      "n": 0,
+      "status": "PENDING"
+    },
+    "FULL_AGENTSHIELD": {
+      "dimensions": {
+        "completeness": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        },
+        "factuality": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        },
+        "helpfulness": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        },
+        "relevance": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        },
+        "task_success": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n": 0,
+          "std": null
+        }
+      },
+      "n": 0,
+      "status": "PENDING"
+    }
+  },
+  "dataset": {
+    "path": "experiments\\performance_quality\\datasets\\quality_tasks_v1.json",
+    "sha256": "802cc42d0fef9954c63bc83975b9afdde50f1bff2b5fabfd01053fc6bb3a12ea",
+    "task_count": 12
+  },
+  "fallback_excluded": true,
+  "generated_at": "2026-09-03T14:25:46.415012+00:00",
+  "git_sha": "a3e8e7bd4f16bea4f1d00ec3b9d5822b53dbe1a6",
+  "method": "human_blinded_ab_comparison",
+  "provider": {
+    "active_provider": "fallback",
+    "active_status": "demo_fallback",
+    "mode": "demo",
+    "model": null,
+    "provider": "fallback",
+    "providers": {
+      "gemini": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "gemini-1.5-flash",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "groq": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "llama-3.3-70b-versatile",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "ollama": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "openai": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "gpt-4o-mini",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      }
+    },
+    "real_llm": false
+  },
+  "raw_file": "performance_quality\\raw_results\\quality_results.jsonl",
+  "real_llm": false,
+  "records": 24,
+  "rubric": {
+    "path": "experiments\\performance_quality\\datasets\\quality_rubric_v1.json",
+    "sha256": "457879f2f289655e96fde936636f66e9e05c294aa0c79adb65422f08a06b823b"
+  },
+  "schema_version": "phase16-quality-summary-v1",
+  "scored_records": 0,
+  "status": "PENDING"
+}

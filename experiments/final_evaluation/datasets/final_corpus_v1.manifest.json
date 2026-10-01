@@ -1,0 +1,29 @@
+{
+  "category_counts": {
+    "BENIGN_SECURITY_DISCUSSION": 8,
+    "CROSS_AGENT_ATTACK": 4,
+    "DIRECT_INJECTION": 4,
+    "INDIRECT_INJECTION": 4,
+    "NORMAL_BENIGN": 8,
+    "OBFUSCATION": 4,
+    "ROLE_HIJACKING": 4,
+    "SECRET_EXFILTRATION": 4,
+    "SYSTEM_PROMPT_EXTRACTION": 4,
+    "TOOL_ABUSE": 4,
+    "WORKFLOW_HIJACK": 4
+  },
+  "dataset_path": "experiments\\final_evaluation\\datasets\\final_corpus_v1.json",
+  "dataset_version": "final_corpus_v1",
+  "duplicate_policy": "casefolded whitespace-normalized text and sample IDs",
+  "effective_groups": 50,
+  "freeze_note": "Manifest is a content hash; changing samples requires a new dataset version.",
+  "frozen": true,
+  "group_policy": "transformation siblings share group_id and are resampled together",
+  "hash_policy": "canonical UTF-8 JSON (sorted keys, compact separators)",
+  "labels": {
+    "benign": 16,
+    "malicious": 36
+  },
+  "sha256": "4bbcc382db9d70108c3f084ed9bd9247e51fb40947c56b85ba330b6c57c2234a",
+  "total_samples": 52
+}

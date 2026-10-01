@@ -1,0 +1,14 @@
+{
+  "name": "FULL_PROVENANCE",
+  "gateway": true,
+  "inter_agent": true,
+  "tool_security": true,
+  "semantic": true,
+  "provenance": true,
+  "policy_mode": "score_threshold",
+  "alert_only": false,
+  "provenance_bonus_untrusted": 0.03,
+  "provenance_bonus_per_depth": 0.01,
+  "provenance_bonus_privileged_target": 0.02,
+  "notes": "Full AgentShield + provenance-aware risk adjustment (taint +0.03, depth +0.01/hop, privileged target +0.02). Bonuses are configurable policy parameters; this is one operating point."
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 500 400">
+  <rect width="100%" height="100%" fill="#0F172A" />
+  <text x="250" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#F8FAFC" text-anchor="middle">AgentShield Confusion Matrix (N=300)</text>
+  
+  <!-- Axis Labels -->
+  <text x="250" y="380" font-family="sans-serif" font-size="14" font-weight="bold" fill="#94A3B8" text-anchor="middle">Predicted Action</text>
+  <text x="20" y="200" font-family="sans-serif" font-size="14" font-weight="bold" fill="#94A3B8" text-anchor="middle" transform="rotate(-90 20 200)">Ground Truth Class</text>
+
+  <!-- Headers -->
+  <text x="200" y="80" font-family="sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">Allowed (Safe)</text>
+  <text x="350" y="80" font-family="sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">Blocked (Attack)</text>
+  
+  <text x="110" y="150" font-family="sans-serif" font-size="13" fill="#CBD5E1" text-anchor="end">Actual Benign</text>
+  <text x="110" y="270" font-family="sans-serif" font-size="13" fill="#CBD5E1" text-anchor="end">Actual Attack</text>
+
+  <!-- Cell TN -->
+  <rect x="130" y="100" width="140" height="100" fill="#1E293B" rx="8" stroke="#334155"/>
+  <text x="200" y="150" font-family="sans-serif" font-size="22" font-weight="bold" fill="#10B981" text-anchor="middle">TN: 100</text>
+
+  <!-- Cell FP -->
+  <rect x="280" y="100" width="140" height="100" fill="#1E293B" rx="8" stroke="#334155"/>
+  <text x="350" y="150" font-family="sans-serif" font-size="22" font-weight="bold" fill="#EF4444" text-anchor="middle">FP: 0</text>
+
+  <!-- Cell FN -->
+  <rect x="130" y="210" width="140" height="100" fill="#1E293B" rx="8" stroke="#334155"/>
+  <text x="200" y="260" font-family="sans-serif" font-size="22" font-weight="bold" fill="#F59E0B" text-anchor="middle">FN: 19</text>
+
+  <!-- Cell TP -->
+  <rect x="280" y="210" width="140" height="100" fill="#1E293B" rx="8" stroke="#334155"/>
+  <text x="350" y="260" font-family="sans-serif" font-size="22" font-weight="bold" fill="#3B82F6" text-anchor="middle">TP: 181</text>
+</svg>

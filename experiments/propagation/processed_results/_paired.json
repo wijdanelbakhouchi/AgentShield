@@ -1,0 +1,46 @@
+{
+  "baseline_vs_full_no_provenance": {
+    "p_value": 0.0,
+    "paired_samples": 140,
+    "statistic": 61.0159,
+    "table": {
+      "a_only": 63,
+      "b_only": 0,
+      "both_success": 77,
+      "neither": 0
+    }
+  },
+  "full_no_provenance_vs_full_banded_sanitize": {
+    "p_value": 1.0,
+    "paired_samples": 140,
+    "statistic": 0.0,
+    "table": {
+      "a_only": 0,
+      "b_only": 0,
+      "both_success": 77,
+      "neither": 63
+    }
+  },
+  "full_no_provenance_vs_full_provenance": {
+    "p_value": 0.001496,
+    "paired_samples": 140,
+    "statistic": 10.0833,
+    "table": {
+      "a_only": 12,
+      "b_only": 0,
+      "both_success": 65,
+      "neither": 63
+    }
+  },
+  "gateway_only_vs_full_no_provenance": {
+    "p_value": 0.0,
+    "paired_samples": 140,
+    "statistic": 39.0244,
+    "table": {
+      "a_only": 41,
+      "b_only": 0,
+      "both_success": 77,
+      "neither": 22
+    }
+  }
+}

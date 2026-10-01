@@ -1,0 +1,10 @@
+{
+  "name": "NO_CONTEXT_ISOLATION",
+  "normalization": true,
+  "rules": true,
+  "semantic_similarity": true,
+  "tool_output_guard": true,
+  "inter_agent_guard": true,
+  "context_isolation": false,
+  "agent_shield": true
+}

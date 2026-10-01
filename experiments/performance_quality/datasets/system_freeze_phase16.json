@@ -1,0 +1,178 @@
+{
+  "configuration_hash": "d9e08e8102f4c24eb1d182c84c29b1c4573891ab4bd83d165279c46acaf2eb28",
+  "created_at": "2026-09-03T14:18:34.495266+00:00",
+  "fallback_quality_evidence": false,
+  "final_test_read_only": true,
+  "freeze_version": "phase16-runtime-freeze-v1",
+  "git_sha": "a3e8e7bd4f16bea4f1d00ec3b9d5822b53dbe1a6",
+  "performance_dataset": {
+    "path": "experiments\\performance_quality\\datasets\\performance_workload_v1.json",
+    "sample_count": 12,
+    "sha256": "2493bf1194f3ca53421dc01ecd46891f0bd0c674247fce31a87172d43eac6651"
+  },
+  "phase15": {
+    "attack_corpus": {
+      "path": "experiments\\semantic_similarity\\attack_corpus.json",
+      "sha256": "c1752cf57e79414de28a56769432301de33f1831c22f041a6e08ca976e269ce3"
+    },
+    "base_commit": "0cc8f62a83550c1e2dca28113b0f37badd3f80b5",
+    "dataset_file_sha256": "e1a0a6ebcb4e8ce71ffb789fd07371ae20ad6df4b3e489746bc710fc3e8da4a2",
+    "dataset_sha256": "4bbcc382db9d70108c3f084ed9bd9247e51fb40947c56b85ba330b6c57c2234a",
+    "dataset_version": "final_corpus_v1",
+    "graph_architecture": [
+      "START \u2192 researcher \u2192 guard_researcher_planner \u2192 planner",
+      "planner \u2192 guard_planner_writer \u2192 writer",
+      "writer \u2192 guard_writer_finalizer \u2192 finalizer \u2192 END",
+      "guard rejection \u2192 workflow_terminated \u2192 END"
+    ],
+    "manifest_sha256": "414a54d7e852443603388ae5ac793e41cc985af4c133df18bc89e9875f2ea616",
+    "policy_block_threshold": 0.17,
+    "security_weights": {
+      "classifier": 0.0,
+      "context": 0.3,
+      "rule": 0.4,
+      "semantic_similarity": 0.3
+    },
+    "semantic_model": {
+      "enabled": true,
+      "name": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "threshold": 0.51
+    },
+    "system_freeze_sha256": "0437a51b16498be190efff4169f1d068cfb629239b462cc6efd3706512c3a18f",
+    "tool_policy": {
+      "approval_required": [
+        "delete_temp_record"
+      ],
+      "legacy_tools_denied": [
+        "delete_database_tool",
+        "system_cmd",
+        "tool_delete_database"
+      ],
+      "permissions": {
+        "delete_temp_record": [
+          "ADMIN"
+        ],
+        "mock_database_tool": [
+          "ADMIN",
+          "ANALYST",
+          "USER"
+        ],
+        "query_test_db": [
+          "ADMIN",
+          "ANALYST"
+        ],
+        "read_document": [
+          "ADMIN",
+          "ANALYST",
+          "USER"
+        ],
+        "read_temp_file": [
+          "ADMIN",
+          "ANALYST"
+        ],
+        "search_web": [
+          "ADMIN",
+          "ANALYST",
+          "USER"
+        ],
+        "web_search_tool": [
+          "ADMIN",
+          "ANALYST",
+          "USER"
+        ],
+        "write_temp_file": [
+          "ADMIN",
+          "ANALYST"
+        ]
+      }
+    }
+  },
+  "provider_runtime": {
+    "active_provider": "fallback",
+    "active_status": "demo_fallback",
+    "mode": "demo",
+    "model": null,
+    "provider": "fallback",
+    "providers": {
+      "gemini": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "gemini-1.5-flash",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "groq": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "llama-3.3-70b-versatile",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "ollama": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "openai": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "gpt-4o-mini",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      }
+    },
+    "real_llm": false
+  },
+  "python": {
+    "implementation": "CPython",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "version": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]"
+  },
+  "quality_dataset": {
+    "path": "experiments\\performance_quality\\datasets\\quality_tasks_v1.json",
+    "sha256": "802cc42d0fef9954c63bc83975b9afdde50f1bff2b5fabfd01053fc6bb3a12ea",
+    "task_count": 12
+  },
+  "quality_rubric": {
+    "path": "experiments\\performance_quality\\datasets\\quality_rubric_v1.json",
+    "sha256": "457879f2f289655e96fde936636f66e9e05c294aa0c79adb65422f08a06b823b"
+  },
+  "security_configuration": {
+    "policy_block_threshold": 0.17,
+    "security_config_hash": "d5ae9b3c635fac40f670952d0da38cf6e1a5a37edfb664bd304dba83655ad906",
+    "semantic_model": {
+      "enabled": true,
+      "name": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "threshold": 0.51
+    },
+    "weights": {
+      "classifier": 0.0,
+      "context": 0.3,
+      "rule": 0.4,
+      "semantic_similarity": 0.3
+    }
+  },
+  "seed": 20250916,
+  "semantic_runtime": {
+    "classification": "SEMANTIC_UNAVAILABLE",
+    "error": "probe_timeout",
+    "probe_ms": 12002.785,
+    "ready": false,
+    "status": "unavailable"
+  }
+}

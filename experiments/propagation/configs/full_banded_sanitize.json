@@ -1,0 +1,11 @@
+{
+  "name": "FULL_BANDED_SANITIZE",
+  "gateway": true,
+  "inter_agent": true,
+  "tool_security": true,
+  "semantic": true,
+  "provenance": false,
+  "policy_mode": "banded",
+  "alert_only": false,
+  "notes": "Full AgentShield with the banded policy regime (LOW->ALLOW, MEDIUM->SANITIZE, HIGH/CRITICAL->BLOCK) instead of the single score threshold."
+}

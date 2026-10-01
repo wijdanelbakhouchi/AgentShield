@@ -1,0 +1,329 @@
+{
+  "baseline": {
+    "count": 12,
+    "stages": {
+      "agent_workflow_ms": {
+        "count": 8,
+        "max": 0.001,
+        "mean": 0.001,
+        "median": 0.001,
+        "min": 0.001,
+        "p50": 0.001,
+        "p95": 0.001,
+        "p99": 0.001,
+        "std": 0.0
+      },
+      "context_isolation_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "database_ms": {
+        "count": 12,
+        "max": 6.561,
+        "mean": 4.337,
+        "median": 4.344,
+        "min": 2.655,
+        "p50": 4.344,
+        "p95": 5.756,
+        "p99": 6.4,
+        "std": 0.92
+      },
+      "inter_agent_guard_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "llm_ms": {
+        "count": 12,
+        "max": 5591.18,
+        "mean": 1176.456,
+        "median": 820.295,
+        "min": 339.929,
+        "p50": 820.295,
+        "p95": 3265.638,
+        "p99": 5126.072,
+        "std": 1418.764
+      },
+      "normalization_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "policy_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "rules_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "scoring_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "semantic_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "tool_output_guard_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "total_ms": {
+        "count": 12,
+        "max": 8278.479,
+        "mean": 2987.904,
+        "median": 3273.485,
+        "min": 414.038,
+        "p50": 3273.485,
+        "p95": 5936.474,
+        "p99": 7810.078,
+        "std": 2129.036
+      }
+    },
+    "total": {
+      "count": 12,
+      "max": 8278.479,
+      "mean": 2987.904,
+      "median": 3273.485,
+      "min": 414.038,
+      "p50": 3273.485,
+      "p95": 5936.474,
+      "p99": 7810.078,
+      "std": 2129.036
+    }
+  },
+  "method": "warm steady-state paired requests; provider initialization and warmup excluded from request distributions",
+  "overhead": {
+    "absolute_overhead_ms": -753.012,
+    "count": 12,
+    "max": 3252.053,
+    "mean": -753.012,
+    "median": -244.667,
+    "min": -4018.016,
+    "p50": -244.667,
+    "p95": 3005.213,
+    "p99": 3202.685,
+    "relative_overhead_percent": -25.202,
+    "std": 2554.341
+  },
+  "protected": {
+    "count": 12,
+    "stages": {
+      "agent_workflow_ms": {
+        "count": 8,
+        "max": 0.001,
+        "mean": 0.001,
+        "median": 0.001,
+        "min": 0.001,
+        "p50": 0.001,
+        "p95": 0.001,
+        "p99": 0.001,
+        "std": 0.0
+      },
+      "context_isolation_ms": {
+        "count": 12,
+        "max": 0.089,
+        "mean": 0.008,
+        "median": 0.001,
+        "min": 0.001,
+        "p50": 0.001,
+        "p95": 0.041,
+        "p99": 0.079,
+        "std": 0.025
+      },
+      "database_ms": {
+        "count": 12,
+        "max": 5.185,
+        "mean": 3.977,
+        "median": 3.867,
+        "min": 2.911,
+        "p50": 3.867,
+        "p95": 4.963,
+        "p99": 5.141,
+        "std": 0.655
+      },
+      "inter_agent_guard_ms": {
+        "count": 2,
+        "max": 449.097,
+        "mean": 395.88,
+        "median": 395.88,
+        "min": 342.663,
+        "p50": 395.88,
+        "p95": 443.775,
+        "p99": 448.033,
+        "std": 75.26
+      },
+      "llm_ms": {
+        "count": 8,
+        "max": 1203.836,
+        "mean": 816.702,
+        "median": 841.659,
+        "min": 468.653,
+        "p50": 841.659,
+        "p95": 1127.829,
+        "p99": 1188.635,
+        "std": 253.42
+      },
+      "normalization_ms": {
+        "count": 12,
+        "max": 0.434,
+        "mean": 0.33,
+        "median": 0.317,
+        "min": 0.23,
+        "p50": 0.317,
+        "p95": 0.429,
+        "p99": 0.433,
+        "std": 0.067
+      },
+      "policy_ms": {
+        "count": 12,
+        "max": 0.019,
+        "mean": 0.014,
+        "median": 0.017,
+        "min": 0.006,
+        "p50": 0.017,
+        "p95": 0.019,
+        "p99": 0.019,
+        "std": 0.005
+      },
+      "rules_ms": {
+        "count": 12,
+        "max": 0.24,
+        "mean": 0.157,
+        "median": 0.15,
+        "min": 0.088,
+        "p50": 0.15,
+        "p95": 0.236,
+        "p99": 0.239,
+        "std": 0.054
+      },
+      "scoring_ms": {
+        "count": 12,
+        "max": 0.031,
+        "mean": 0.022,
+        "median": 0.025,
+        "min": 0.009,
+        "p50": 0.025,
+        "p95": 0.03,
+        "p99": 0.031,
+        "std": 0.008
+      },
+      "semantic_ms": {
+        "count": 12,
+        "max": 22.79,
+        "mean": 13.265,
+        "median": 12.072,
+        "min": 10.356,
+        "p50": 12.072,
+        "p95": 18.807,
+        "p99": 21.993,
+        "std": 3.4
+      },
+      "tool_output_guard_ms": {
+        "count": 1,
+        "max": 263.738,
+        "mean": 263.738,
+        "median": 263.738,
+        "min": 263.738,
+        "p50": 263.738,
+        "p95": 263.738,
+        "p99": 263.738,
+        "std": 0.0
+      },
+      "total_ms": {
+        "count": 12,
+        "max": 4260.463,
+        "mean": 2234.892,
+        "median": 3316.51,
+        "min": 87.259,
+        "p50": 3316.51,
+        "p95": 3933.558,
+        "p99": 4195.082,
+        "std": 1747.431
+      }
+    },
+    "total": {
+      "count": 12,
+      "max": 4260.463,
+      "mean": 2234.892,
+      "median": 3316.51,
+      "min": 87.259,
+      "p50": 3316.51,
+      "p95": 3933.558,
+      "p99": 4195.082,
+      "std": 1747.431
+    }
+  },
+  "provider": {
+    "latency_ms": 497.98,
+    "mode": "provider",
+    "model": "openai/gpt-oss-20b",
+    "provider": "groq",
+    "provider_status": "ready",
+    "real_llm": true
+  },
+  "raw_files": {
+    "BASELINE_NO_AGENTSHIELD": "runtime_evaluation_closure\\provider_verified_run\\phase16\\raw_results\\BASELINE_NO_AGENTSHIELD.jsonl",
+    "FULL_AGENTSHIELD": "runtime_evaluation_closure\\provider_verified_run\\phase16\\raw_results\\FULL_AGENTSHIELD.jsonl"
+  },
+  "real_llm": true,
+  "repetitions": 1,
+  "schema_version": "phase16.5-provider-performance-v1",
+  "status": "COMPLETE",
+  "warmup": 0
+}

@@ -1,0 +1,65 @@
+{
+  "dataset_version": "benchmark_v2",
+  "files": {
+    "all": "benchmark_v2_all.json",
+    "dev": "benchmark_v2_dev.json",
+    "test": "benchmark_v2_test.json"
+  },
+  "frozen": true,
+  "seed": 19,
+  "sha256_all": "f58d85cd58c57356f82aaf4b0f37ce2753f52bf7bfe5e2b0e4d73db33565e594",
+  "sha256_dev": "822b3d9e7105cf90f0e3bf42715bb55e137da165084c35a1076a0f84b603f0a1",
+  "sha256_test": "b0a2d8c655d674cc3e1584a6a936ad19bd16ede89369ad8dab3fb8152f8faa9a",
+  "summary": {
+    "attack_samples": 140,
+    "benign_samples": 23,
+    "category_counts": {
+      "BENIGN_DISTRACTOR": 15,
+      "BENIGN_NORMAL": 8,
+      "DANGEROUS_SEQUENCE": 4,
+      "DIRECT_INJECTION": 4,
+      "INDIRECT_DOCUMENT_INJECTION": 4,
+      "INTER_AGENT_PROPAGATION": 8,
+      "MULTI_HOP_PROPAGATION": 7,
+      "OBFUSCATED_INJECTION": 71,
+      "PARAMETER_MANIPULATION": 4,
+      "PLANNER_TARGETING": 12,
+      "SECRET_EXFILTRATION": 4,
+      "SYSTEM_PROMPT_EXTRACTION": 4,
+      "TOOL_ABUSE": 4,
+      "TOOL_OUTPUT_INJECTION": 4,
+      "TRIGGER_BASED": 10
+    },
+    "dev_samples": 136,
+    "difficulty_counts": {
+      "easy": 102,
+      "hard": 4,
+      "medium": 57
+    },
+    "family_count": 83,
+    "held_out_families": [
+      "BENIGN_DISTRACTOR:56",
+      "BENIGN_DISTRACTOR:66",
+      "BENIGN_DISTRACTOR:69",
+      "BENIGN_NORMAL:50",
+      "BENIGN_NORMAL:55",
+      "DANGEROUS_SEQUENCE:46",
+      "DIRECT_INJECTION:1",
+      "DIRECT_INJECTION:3",
+      "INTER_AGENT_PROPAGATION:13",
+      "INTER_AGENT_PROPAGATION:14",
+      "OBFUSCATED_INJECTION:36",
+      "PLANNER_TARGETING:21",
+      "PLANNER_TARGETING:22",
+      "TOOL_ABUSE:37",
+      "TOOL_ABUSE:38",
+      "TRIGGER_BASED:24",
+      "TRIGGER_BASED:25"
+    ],
+    "schema_version": "2.0",
+    "seed": 19,
+    "split_methodology": "Template families are held out at 20% per category; transformation variants inherit the family of their base template. The test set is never touched during detector development.",
+    "test_samples": 27,
+    "total_samples": 163
+  }
+}

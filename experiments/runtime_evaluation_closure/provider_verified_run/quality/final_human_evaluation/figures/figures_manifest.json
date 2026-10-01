@@ -1,0 +1,11 @@
+{
+  "generated_figures": [
+    "experiments\\runtime_evaluation_closure\\provider_verified_run\\quality\\final_human_evaluation\\figures\\quality_dimensions.png",
+    "experiments\\runtime_evaluation_closure\\provider_verified_run\\quality\\final_human_evaluation\\figures\\quality_paired_differences.png"
+  ],
+  "schema_version": "phase16.5-final-quality-figures-v1",
+  "source_summary": {
+    "path": "experiments\\runtime_evaluation_closure\\provider_verified_run\\quality\\final_human_evaluation\\human_quality_summary.json",
+    "sha256": "fca0cb45e4875d040ec04ff636125c202083e170f7abfcdaefceecf8f4c4e024"
+  }
+}

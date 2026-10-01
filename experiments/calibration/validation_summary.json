@@ -1,0 +1,14 @@
+{
+  "pytest": "PASS: 29 passed, 4 warnings",
+  "compileall": "PASS",
+  "ruff": "PASS: calibration files clean; full repository retains 95 pre-existing findings",
+  "fastapi": "PASS: TestClient startup and endpoint smoke checks",
+  "health_http": "PASS: HTTP 200",
+  "benign_analysis": "PASS: 0.00 LOW ALLOW",
+  "malicious_analysis": "PASS: 0.40 CRITICAL BLOCK",
+  "docker_build": "PASS",
+  "docker_startup": "PASS: backend healthy and frontend started",
+  "docker_health": "PASS: HTTP 200; calibrated config loaded",
+  "frontend_npm_ci": "PASS: lockfile install (Node 22 engine warning; 2 audit advisories reported)",
+  "frontend_build": "PASS: Vite production build (chunk-size warning only)"
+}

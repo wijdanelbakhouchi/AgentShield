@@ -1,0 +1,5 @@
+{
+  "name": "BASELINE_NO_AGENTSHIELD",
+  "agent_shield": false,
+  "description": "Same bounded four-stage task workflow with all AgentShield interventions disabled."
+}

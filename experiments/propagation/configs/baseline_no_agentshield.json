@@ -1,0 +1,11 @@
+{
+  "name": "BASELINE_NO_AGENTSHIELD",
+  "gateway": false,
+  "inter_agent": false,
+  "tool_security": false,
+  "semantic": false,
+  "provenance": false,
+  "policy_mode": "score_threshold",
+  "alert_only": false,
+  "notes": "Unprotected testbed: no gateway, no inter-agent monitoring, no tool security. Every payload reaches its target by construction; this is the scientific baseline for the before/after comparison."
+}

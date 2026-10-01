@@ -1,0 +1,41 @@
+{
+  "fallback_excluded": true,
+  "provider": {
+    "latency_ms": 230.88,
+    "mode": "provider",
+    "model": "openai/gpt-oss-20b",
+    "provider": "groq",
+    "provider_status": "ready",
+    "real_llm": true
+  },
+  "raw_file": "runtime_evaluation_closure\\provider_verified_run\\quality\\quality_results.jsonl",
+  "records": 24,
+  "rubric": {
+    "blinding": "Responses are presented as randomized A/B labels; the evaluator does not see configuration names.",
+    "dimensions": {
+      "completeness": "Does it cover the requested components at an appropriate depth?",
+      "factuality": "Are claims accurate, qualified, and free of invented sources or facts?",
+      "helpfulness": "Would the answer help the intended reader take the next useful step?",
+      "relevance": "Does it stay focused on the task without distracting content?",
+      "task_success": "Did the answer fulfill the requested task and constraints?"
+    },
+    "fallback_policy": "DEMO_FALLBACK responses are excluded and cannot receive quality scores.",
+    "judge_temperature": null,
+    "method": "human_blinded_ab_comparison",
+    "prompt_version": "human-rubric-v1",
+    "scale": {
+      "anchors": {
+        "1": "unusable",
+        "3": "partially satisfactory",
+        "5": "excellent"
+      },
+      "maximum": 5,
+      "minimum": 1
+    },
+    "version": "quality_rubric_v1"
+  },
+  "schema_version": "phase16.5-quality-v1",
+  "scored_records": 0,
+  "status": "PENDING_HUMAN_EVALUATION",
+  "blind_scoring_file": "runtime_evaluation_closure\\provider_verified_run\\quality\\quality_blind_scoring.jsonl"
+}

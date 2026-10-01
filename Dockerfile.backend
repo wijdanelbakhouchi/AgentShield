@@ -1,0 +1,41 @@
+FROM python:3.11.4-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    HF_HOME=/app/model-cache \
+    TMPDIR=/app/tmp \
+    SEMANTIC_MODEL_NAME=sentence-transformers/all-MiniLM-L6-v2 \
+    SEMANTIC_MODEL_REVISION=1110a243fdf4706b3f48f1d95db1a4f5529b4d41 \
+    SEMANTIC_SIMILARITY_ENABLED=true
+
+WORKDIR /app
+RUN mkdir -p /app/tmp /app/model-cache
+
+COPY requirements.txt ./
+RUN python -m pip install --no-cache-dir --upgrade pip
+
+# Use the CPU-only PyTorch wheel in the service image. The detector runs on
+# CPU and does not need the multi-gigabyte CUDA dependency graph pulled by the
+# generic Linux wheel.
+RUN python -m pip install --no-cache-dir \
+    --index-url https://download.pytorch.org/whl/cpu \
+    torch==2.5.1+cpu
+
+RUN python -m pip install --no-cache-dir -r requirements.txt
+
+# Bake the pinned real sentence-transformer snapshot into the backend image so
+# health checks do not silently switch to a lexical fallback at first request.
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2', revision='1110a243fdf4706b3f48f1d95db1a4f5529b4d41', device='cpu')"
+
+COPY . .
+
+# The service owns only its writable SQLite/data and temporary directories.
+# Application code, dependencies, and the baked semantic model remain
+# read-only at runtime when compose enables ``read_only``.
+RUN addgroup --system --gid 10001 agentshield && adduser --system --uid 10001 --ingroup agentshield agentshield \
+    && mkdir -p /app/data /app/tmp \
+    && chown -R agentshield:agentshield /app
+
+EXPOSE 8000
+USER agentshield
+CMD ["sh", "-c", "alembic upgrade head && uvicorn api.server:app --host 0.0.0.0 --port 8000"]

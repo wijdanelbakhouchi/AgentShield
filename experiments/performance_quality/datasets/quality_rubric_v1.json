@@ -1,0 +1,16 @@
+{
+  "version": "quality_rubric_v1",
+  "method": "human_blinded_ab_comparison",
+  "scale": {"minimum": 1, "maximum": 5, "anchors": {"1": "unusable", "3": "partially satisfactory", "5": "excellent"}},
+  "dimensions": {
+    "task_success": "Did the answer fulfill the requested task and constraints?",
+    "relevance": "Does it stay focused on the task without distracting content?",
+    "completeness": "Does it cover the requested components at an appropriate depth?",
+    "factuality": "Are claims accurate, qualified, and free of invented sources or facts?",
+    "helpfulness": "Would the answer help the intended reader take the next useful step?"
+  },
+  "blinding": "Responses are presented as randomized A/B labels; the evaluator does not see configuration names.",
+  "fallback_policy": "DEMO_FALLBACK responses are excluded and cannot receive quality scores.",
+  "judge_temperature": null,
+  "prompt_version": "human-rubric-v1"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "FULL_AGENTSHIELD",
+  "normalization": true,
+  "rules": true,
+  "semantic_similarity": true,
+  "tool_output_guard": true,
+  "inter_agent_guard": true,
+  "context_isolation": true,
+  "agent_shield": true
+}

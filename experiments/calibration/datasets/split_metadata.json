@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "calibration_fraction": 0.7,
+  "source_dataset": "tests/benchmark_dataset.json",
+  "source_sha256": "2655ec616d5cc509a0d21dae7fc14b35e8366136bb53d776975404026a8efe31",
+  "source_records": 300,
+  "historical_unique_groups": 50,
+  "authored_records": 24,
+  "exact_duplicates_detected": 0,
+  "near_duplicate_or_variant_records_collapsed": 250,
+  "duplicates_removed_from_calibration": 250,
+  "deduplication": "one representative per (category, prompt without variant suffix) group",
+  "grouping": "all records sharing group_id remain in the same role; no held-out evaluation",
+  "category_counts_all": {
+    "DIRECT_INJECTION": 10,
+    "INDIRECT_INJECTION": 10,
+    "SYSTEM_EXFILTRATION": 10,
+    "OBFUSCATED_EVASION": 10,
+    "BENIGN_CONTROL": 10,
+    "SECURITY_ADJACENT_BENIGN": 16,
+    "INDIRECT_INJECTION_CONTEXT": 8
+  },
+  "category_counts_calibration": {
+    "INDIRECT_INJECTION_CONTEXT": 5,
+    "SECURITY_ADJACENT_BENIGN": 11,
+    "DIRECT_INJECTION": 7,
+    "SYSTEM_EXFILTRATION": 7,
+    "INDIRECT_INJECTION": 7,
+    "OBFUSCATED_EVASION": 7,
+    "BENIGN_CONTROL": 7
+  },
+  "category_counts_held_out": {
+    "INDIRECT_INJECTION_CONTEXT": 3,
+    "SECURITY_ADJACENT_BENIGN": 5,
+    "DIRECT_INJECTION": 3,
+    "SYSTEM_EXFILTRATION": 3,
+    "INDIRECT_INJECTION": 3,
+    "OBFUSCATED_EVASION": 3,
+    "BENIGN_CONTROL": 3
+  }
+}

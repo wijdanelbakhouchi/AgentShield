@@ -1,0 +1,5 @@
+{
+  "name": "FULL_AGENTSHIELD",
+  "agent_shield": true,
+  "description": "Same bounded four-stage task workflow with the frozen AgentShield controls enabled."
+}

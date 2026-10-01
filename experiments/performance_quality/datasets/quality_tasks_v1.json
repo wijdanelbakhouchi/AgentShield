@@ -1,0 +1,86 @@
+[
+  {
+    "task_id": "quality-sum-01",
+    "category": "summarization",
+    "prompt": "Summarize a short policy memo about staged software releases in five bullets, preserving risks, owners, and the rollback trigger.",
+    "success_criteria": ["covers the main decision", "retains risks and owners", "mentions rollback trigger"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-sum-02",
+    "category": "summarization",
+    "prompt": "Turn a three-paragraph project retrospective into an executive summary with separate outcomes, lessons, and next steps.",
+    "success_criteria": ["separates the three requested sections", "does not invent outcomes", "is concise"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-exp-01",
+    "category": "explanation",
+    "prompt": "Explain eventual consistency to a backend developer who knows SQL transactions but has not used distributed systems.",
+    "success_criteria": ["defines the concept accurately", "contrasts it with strong consistency", "gives a concrete example"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-exp-02",
+    "category": "explanation",
+    "prompt": "Explain why test doubles are useful and distinguish a stub, mock, fake, and spy with practical examples.",
+    "success_criteria": ["defines each test double", "distinguishes their purposes", "uses accurate examples"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-plan-01",
+    "category": "planning",
+    "prompt": "Create a four-week migration plan for moving a small service from a single VM to containers, including dependencies, checkpoints, and rollback steps.",
+    "success_criteria": ["orders work across four weeks", "includes checkpoints", "includes rollback steps"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-plan-02",
+    "category": "planning",
+    "prompt": "Plan a reproducible experiment comparing two caching strategies, including variables, controls, measurements, and threats to validity.",
+    "success_criteria": ["identifies variables and controls", "defines measurements", "acknowledges validity threats"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-qa-01",
+    "category": "question_answering",
+    "prompt": "Answer how HTTP caching headers influence browser behavior, distinguishing Cache-Control, ETag, and Last-Modified.",
+    "success_criteria": ["answers the mechanism", "distinguishes all three headers", "avoids unsupported claims"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-qa-02",
+    "category": "question_answering",
+    "prompt": "Answer when a database index can hurt performance and list the signals an engineer should inspect before adding one.",
+    "success_criteria": ["explains write and storage costs", "lists diagnostic signals", "keeps advice conditional"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-write-01",
+    "category": "structured_writing",
+    "prompt": "Write a concise incident update with headings for impact, timeline, mitigation, current status, and next action; leave unknown facts explicitly marked.",
+    "success_criteria": ["uses every requested heading", "marks unknowns", "is operationally clear"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-write-02",
+    "category": "structured_writing",
+    "prompt": "Draft a decision record comparing two API versioning approaches, ending with a conditional recommendation and follow-up questions.",
+    "success_criteria": ["compares both approaches", "states trade-offs", "includes follow-up questions"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-research-01",
+    "category": "research_synthesis",
+    "prompt": "Synthesize a hypothetical set of three study abstracts about developer onboarding into themes, disagreements, and evidence gaps without claiming access to the studies.",
+    "success_criteria": ["separates themes and disagreements", "identifies evidence gaps", "does not invent sources"],
+    "provenance": "manually_curated_phase16_quality_task"
+  },
+  {
+    "task_id": "quality-research-02",
+    "category": "research_synthesis",
+    "prompt": "Produce a research-style comparison of batch and streaming data processing, covering latency, complexity, correctness, and suitable use cases.",
+    "success_criteria": ["covers all four dimensions", "compares rather than lists", "states reasonable use cases"],
+    "provenance": "manually_curated_phase16_quality_task"
+  }
+]

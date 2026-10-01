@@ -1,0 +1,82 @@
+{
+  "attack_corpus": {
+    "path": "experiments\\semantic_similarity\\attack_corpus.json",
+    "sha256": "c1752cf57e79414de28a56769432301de33f1831c22f041a6e08ca976e269ce3"
+  },
+  "dataset": {
+    "effective_groups": 50,
+    "sha256": "4bbcc382db9d70108c3f084ed9bd9247e51fb40947c56b85ba330b6c57c2234a",
+    "total_samples": 52,
+    "version": "final_corpus_v1"
+  },
+  "final_test_read_only": true,
+  "freeze_version": "phase15-system-freeze-v1",
+  "git_commit": "0cc8f62a83550c1e2dca28113b0f37badd3f80b5",
+  "graph_architecture": [
+    "START \u2192 researcher \u2192 guard_researcher_planner \u2192 planner",
+    "planner \u2192 guard_planner_writer \u2192 writer",
+    "writer \u2192 guard_writer_finalizer \u2192 finalizer \u2192 END",
+    "guard rejection \u2192 workflow_terminated \u2192 END"
+  ],
+  "note": "This record is captured before evaluation; final-test outcomes cannot alter security configuration.",
+  "policy_block_threshold": 0.17,
+  "security_weights": {
+    "classifier": 0.0,
+    "context": 0.3,
+    "rule": 0.4,
+    "semantic_similarity": 0.3
+  },
+  "semantic_model": {
+    "enabled": true,
+    "name": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "threshold": 0.51
+  },
+  "tool_policy": {
+    "approval_required": [
+      "delete_temp_record"
+    ],
+    "legacy_tools_denied": [
+      "delete_database_tool",
+      "system_cmd",
+      "tool_delete_database"
+    ],
+    "permissions": {
+      "delete_temp_record": [
+        "ADMIN"
+      ],
+      "mock_database_tool": [
+        "ADMIN",
+        "ANALYST",
+        "USER"
+      ],
+      "query_test_db": [
+        "ADMIN",
+        "ANALYST"
+      ],
+      "read_document": [
+        "ADMIN",
+        "ANALYST",
+        "USER"
+      ],
+      "read_temp_file": [
+        "ADMIN",
+        "ANALYST"
+      ],
+      "search_web": [
+        "ADMIN",
+        "ANALYST",
+        "USER"
+      ],
+      "web_search_tool": [
+        "ADMIN",
+        "ANALYST",
+        "USER"
+      ],
+      "write_temp_file": [
+        "ADMIN",
+        "ANALYST"
+      ]
+    }
+  }
+}

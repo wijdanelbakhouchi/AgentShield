@@ -1,0 +1,10 @@
+{
+  "name": "BASELINE_NO_AGENTSHIELD",
+  "normalization": false,
+  "rules": false,
+  "semantic_similarity": false,
+  "tool_output_guard": false,
+  "inter_agent_guard": false,
+  "context_isolation": false,
+  "agent_shield": false
+}

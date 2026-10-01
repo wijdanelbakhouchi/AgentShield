@@ -1,0 +1,51 @@
+{
+  "additional_provider_calls": 34,
+  "created_at": "2026-09-03T19:25:52.571629+00:00",
+  "fallback_excluded": true,
+  "model": "openai/gpt-oss-20b",
+  "original_blind_artifact": "runtime_evaluation_closure\\provider_verified_run\\quality\\quality_blind_scoring.jsonl",
+  "original_raw_artifact": "runtime_evaluation_closure\\provider_verified_run\\quality\\quality_results.jsonl",
+  "original_valid_records": 2,
+  "provider": "groq",
+  "quality_dataset_sha256": "802cc42d0fef9954c63bc83975b9afdde50f1bff2b5fabfd01053fc6bb3a12ea",
+  "records": 24,
+  "regenerated_records": 22,
+  "successful_repair_calls": 22,
+  "failed_provider_attempts": 7,
+  "regeneration_reason": "empty completion / insufficient token budget",
+  "repair_token_budget": 4096,
+  "repair_token_budgets_used": {
+    "2048": 13,
+    "4096": 9
+  },
+  "repaired_blind_artifact": "runtime_evaluation_closure\\provider_verified_run\\quality\\quality_blind_scoring_repaired.jsonl",
+  "repaired_raw_artifact": "runtime_evaluation_closure\\provider_verified_run\\quality\\quality_results_repaired.jsonl",
+  "schema_version": "phase16.5-quality-repair-v1",
+  "scored_records": 0,
+  "smoke_test": {
+    "blind_label": "B",
+    "configuration": "BASELINE_NO_AGENTSHIELD",
+    "finish_reason": "stop",
+    "response_length": 1528,
+    "sample_id": "quality-sum-01",
+    "token_usage": {
+      "completion_time": 0.491706901,
+      "completion_tokens": 441,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "prompt_time": 0.040909955,
+      "prompt_tokens": 96,
+      "prompt_tokens_details": null,
+      "queue_time": 0.152645334,
+      "total_time": 0.532616856,
+      "total_tokens": 537
+    },
+    "usage_metadata": {
+      "input_tokens": 96,
+      "output_tokens": 441,
+      "total_tokens": 537
+    }
+  },
+  "status": "PENDING_HUMAN_EVALUATION"
+}

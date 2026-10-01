@@ -1,0 +1,11 @@
+{
+  "name": "GATEWAY_ONLY",
+  "gateway": true,
+  "inter_agent": false,
+  "tool_security": false,
+  "semantic": true,
+  "provenance": false,
+  "policy_mode": "score_threshold",
+  "alert_only": false,
+  "notes": "Input-only filter: canonical ingress pipeline (normalize/rules/context/semantic), no message-level monitoring."
+}

@@ -1,0 +1,19 @@
+{
+  "generated_figures": [
+    "experiments/performance_quality/figures/latency_comparison.png",
+    "experiments/performance_quality/figures/stage_latency_distribution.png",
+    "experiments/performance_quality/figures/security_overhead.png"
+  ],
+  "quality_figure_omitted": true,
+  "schema_version": "phase16-figures-v1",
+  "source_processed": {
+    "performance": {
+      "path": "experiments/performance_quality/processed_results/performance_summary.json",
+      "sha256": "5f572314ec2f3f2e23d1b48b039894caeb47106ad47d8e7736594cb3dd6a0c47"
+    },
+    "quality": {
+      "path": "experiments/performance_quality/processed_results/quality_summary.json",
+      "sha256": "856cfb0c9f9f882e9608ba1d36bd69975302fbd1a5bad509287aad94858d69fa"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "artifact": "Phase 4 calibration metadata",
+  "created_at_utc": "2026-09-02T20:35:33.361363+00:00",
+  "git_commit": "5604de9e1d09409b25a3a96b46cfda1fa8783d33",
+  "python_version": "3.11.4",
+  "source_dataset": "tests/benchmark_dataset.json",
+  "source_dataset_sha256": "2655ec616d5cc509a0d21dae7fc14b35e8366136bb53d776975404026a8efe31",
+  "calibration_dataset": "experiments/calibration/datasets/calibration.json",
+  "calibration_dataset_sha256": "287b662a46b3e9f63b0b9421cfefe4ee400dc62030125690a5cb7b1cccb41ac3",
+  "raw_predictions": "experiments/calibration/raw/calibration_predictions.jsonl",
+  "raw_predictions_sha256": "b2373995a2900531f1fb2dc71e36b16263b38bc38b3fcf0580fb8b4a74cbccbe",
+  "sample_counts": {
+    "calibration": 51,
+    "held_out_schema_checked_only": 23,
+    "malicious_calibration": 33,
+    "benign_calibration": 18,
+    "security_adjacent_benign_calibration": 11
+  },
+  "split_metadata": {
+    "seed": 42,
+    "calibration_fraction": 0.7,
+    "source_dataset": "tests/benchmark_dataset.json",
+    "source_sha256": "2655ec616d5cc509a0d21dae7fc14b35e8366136bb53d776975404026a8efe31",
+    "source_records": 300,
+    "historical_unique_groups": 50,
+    "authored_records": 24,
+    "exact_duplicates_detected": 0,
+    "near_duplicate_or_variant_records_collapsed": 250,
+    "duplicates_removed_from_calibration": 250,
+    "deduplication": "one representative per (category, prompt without variant suffix) group",
+    "grouping": "all records sharing group_id remain in the same role; no held-out evaluation",
+    "category_counts_all": {
+      "DIRECT_INJECTION": 10,
+      "INDIRECT_INJECTION": 10,
+      "SYSTEM_EXFILTRATION": 10,
+      "OBFUSCATED_EVASION": 10,
+      "BENIGN_CONTROL": 10,
+      "SECURITY_ADJACENT_BENIGN": 16,
+      "INDIRECT_INJECTION_CONTEXT": 8
+    },
+    "category_counts_calibration": {
+      "INDIRECT_INJECTION_CONTEXT": 5,
+      "SECURITY_ADJACENT_BENIGN": 11,
+      "DIRECT_INJECTION": 7,
+      "SYSTEM_EXFILTRATION": 7,
+      "INDIRECT_INJECTION": 7,
+      "OBFUSCATED_EVASION": 7,
+      "BENIGN_CONTROL": 7
+    },
+    "category_counts_held_out": {
+      "INDIRECT_INJECTION_CONTEXT": 3,
+      "SECURITY_ADJACENT_BENIGN": 5,
+      "DIRECT_INJECTION": 3,
+      "SYSTEM_EXFILTRATION": 3,
+      "INDIRECT_INJECTION": 3,
+      "OBFUSCATED_EVASION": 3,
+      "BENIGN_CONTROL": 3
+    }
+  },
+  "held_out_schema_ok": true,
+  "held_out_used_for_tuning": false,
+  "weight_search": {
+    "method": "coarse simplex grid at 0.10 increments; non-negative weights summing to 1",
+    "candidate_count": 66,
+    "objective": "maximize F1 subject to FPR <= max(0.05, 1/N_benign); exact ties prefer higher threshold",
+    "strict_fpr_limit": 0.05,
+    "effective_fpr_limit": 0.05555555555555555,
+    "small_sample_rule": "use one-benign-observation resolution when it exceeds 5%; report strict 5% point separately",
+    "tie_break": "within 0.005 F1 of the maximum, maximize the smallest weight (retain active signals), then minimize distance from Phase 3 weights"
+  },
+  "threshold_search": "0.00 through 1.00 inclusive in 0.01 increments",
+  "random_seed": 42,
+  "llm": {
+    "mode": "deterministic heuristic fallback",
+    "external_provider_evaluated": false,
+    "note": "LLM CLASSIFIER CALIBRATION NOT VERIFIED"
+  },
+  "policy_mode_selected": "score_only",
+  "flag_override_evaluated_separately": true,
+  "selected_configuration": {
+    "rule": 0.4,
+    "classifier": 0.3,
+    "context": 0.3,
+    "block_threshold": 0.2,
+    "risk_bands": {
+      "low_max": 0.0,
+      "medium_max": 0.01,
+      "high_max": 0.19
+    },
+    "f1_constraint_met": true
+  },
+  "historical_results_modified": false,
+  "held_out_metrics_generated": false
+}

@@ -1,0 +1,54 @@
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Databases
+agent_shield.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+coverage.xml
+.tox/
+
+# Frontend builds and dependencies
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+
+# Generated benchmark and experiment outputs
+artifacts/
+adversarial_benchmark_report.json
+experiments/**/raw_results/
+experiments/**/failed_attempts/
+experiments/**/semantic_ready_run/
+experiments/**/results/search_results.json
+experiments/e2e_evaluation/results/
+experiments/runtime_evaluation_closure/provider_verified_run/quality/quality_blind_scoring*.jsonl
+
+# IDE and editor settings
+.idea/
+.vscode/

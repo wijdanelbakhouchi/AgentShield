@@ -1,0 +1,10 @@
+{
+  "name": "NO_SEMANTIC_SIMILARITY",
+  "normalization": true,
+  "rules": true,
+  "semantic_similarity": false,
+  "tool_output_guard": true,
+  "inter_agent_guard": true,
+  "context_isolation": true,
+  "agent_shield": true
+}

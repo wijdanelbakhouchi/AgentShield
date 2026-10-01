@@ -1,0 +1,62 @@
+{
+  "artifact": "PHASE 3 UNCALIBRATED BASELINE",
+  "created_at_utc": "2026-09-02T20:15:25.284636+00:00",
+  "git_commit": "c2f0744d6797aaa355aded6b73dbede82ccfa28f",
+  "python_version": "3.11.4",
+  "source_dataset": "tests/benchmark_dataset.json",
+  "source_sha256": "2655ec616d5cc509a0d21dae7fc14b35e8366136bb53d776975404026a8efe31",
+  "calibration_dataset_sha256": "287b662a46b3e9f63b0b9421cfefe4ee400dc62030125690a5cb7b1cccb41ac3",
+  "sample_count": 51,
+  "weights": {
+    "rule": 0.4,
+    "classifier": 0.4,
+    "context": 0.2
+  },
+  "policy_flag_override": true,
+  "thresholds": {
+    "policy_block": 0.3,
+    "risk_low_max": 0.3,
+    "risk_medium_max": 0.6,
+    "risk_high_max": 0.8
+  },
+  "llm": "deterministic heuristic fallback; optional external classifier not evaluated",
+  "split_metadata": {
+    "seed": 42,
+    "calibration_fraction": 0.7,
+    "source_dataset": "tests/benchmark_dataset.json",
+    "source_sha256": "2655ec616d5cc509a0d21dae7fc14b35e8366136bb53d776975404026a8efe31",
+    "source_records": 300,
+    "historical_unique_groups": 50,
+    "authored_records": 24,
+    "deduplication": "one representative per (category, prompt without variant suffix) group",
+    "grouping": "all records sharing group_id remain in the same role; no held-out evaluation",
+    "category_counts_all": {
+      "DIRECT_INJECTION": 10,
+      "INDIRECT_INJECTION": 10,
+      "SYSTEM_EXFILTRATION": 10,
+      "OBFUSCATED_EVASION": 10,
+      "BENIGN_CONTROL": 10,
+      "SECURITY_ADJACENT_BENIGN": 16,
+      "INDIRECT_INJECTION_CONTEXT": 8
+    },
+    "category_counts_calibration": {
+      "INDIRECT_INJECTION_CONTEXT": 5,
+      "SECURITY_ADJACENT_BENIGN": 11,
+      "DIRECT_INJECTION": 7,
+      "SYSTEM_EXFILTRATION": 7,
+      "INDIRECT_INJECTION": 7,
+      "OBFUSCATED_EVASION": 7,
+      "BENIGN_CONTROL": 7
+    },
+    "category_counts_held_out": {
+      "INDIRECT_INJECTION_CONTEXT": 3,
+      "SECURITY_ADJACENT_BENIGN": 5,
+      "DIRECT_INJECTION": 3,
+      "SYSTEM_EXFILTRATION": 3,
+      "INDIRECT_INJECTION": 3,
+      "OBFUSCATED_EVASION": 3,
+      "BENIGN_CONTROL": 3
+    }
+  },
+  "rows_sha256": "6191ec0a68ef0a177ba4fa809cb37ace769397f0cbef49320f343a602836beaa"
+}

@@ -1,0 +1,396 @@
+{
+  "baseline": {
+    "count": 300,
+    "stages": {
+      "agent_workflow_ms": {
+        "count": 300,
+        "max": 0.119,
+        "mean": 0.008,
+        "median": 0.004,
+        "min": 0.002,
+        "p50": 0.004,
+        "p95": 0.017,
+        "p99": 0.027,
+        "std": 0.009
+      },
+      "context_isolation_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "database_ms": {
+        "count": 300,
+        "max": 4.429,
+        "mean": 3.022,
+        "median": 2.923,
+        "min": 2.367,
+        "p50": 2.923,
+        "p95": 3.805,
+        "p99": 4.053,
+        "std": 0.396
+      },
+      "inter_agent_guard_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "llm_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "normalization_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "policy_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "rules_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "scoring_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "semantic_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "tool_ms": {
+        "count": 100,
+        "max": 0.108,
+        "mean": 0.01,
+        "median": 0.009,
+        "min": 0.007,
+        "p50": 0.009,
+        "p95": 0.011,
+        "p99": 0.044,
+        "std": 0.011
+      },
+      "tool_output_guard_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      }
+    },
+    "total": {
+      "count": 300,
+      "max": 4.494,
+      "mean": 3.074,
+      "median": 2.987,
+      "min": 2.392,
+      "p50": 2.987,
+      "p95": 3.869,
+      "p99": 4.149,
+      "std": 0.405
+    }
+  },
+  "cold_start_ms": 3.781,
+  "configuration_hash": "d9e08e8102f4c24eb1d182c84c29b1c4573891ab4bd83d165279c46acaf2eb28",
+  "dataset": {
+    "path": "experiments\\performance_quality\\datasets\\performance_workload_v1.json",
+    "sample_count": 12,
+    "sha256": "2493bf1194f3ca53421dc01ecd46891f0bd0c674247fce31a87172d43eac6651"
+  },
+  "freeze_git_sha": "a3e8e7bd4f16bea4f1d00ec3b9d5822b53dbe1a6",
+  "generated_at": "2026-09-24T17:08:33.677408+00:00",
+  "git_sha": "8a45f53f0537375462578fd7415ae2b546c88808",
+  "overhead": {
+    "absolute_overhead_ms": 0.485,
+    "count": 300,
+    "max": 2.125,
+    "mean": 0.485,
+    "median": 0.514,
+    "min": -1.409,
+    "p50": 0.514,
+    "p95": 1.401,
+    "p99": 1.764,
+    "relative_overhead_percent": 15.771,
+    "std": 0.579
+  },
+  "protected": {
+    "count": 300,
+    "stages": {
+      "agent_workflow_ms": {
+        "count": 250,
+        "max": 0.075,
+        "mean": 0.007,
+        "median": 0.003,
+        "min": 0.002,
+        "p50": 0.003,
+        "p95": 0.017,
+        "p99": 0.027,
+        "std": 0.008
+      },
+      "context_isolation_ms": {
+        "count": 25,
+        "max": 0.175,
+        "mean": 0.1,
+        "median": 0.092,
+        "min": 0.086,
+        "p50": 0.092,
+        "p95": 0.135,
+        "p99": 0.166,
+        "std": 0.021
+      },
+      "database_ms": {
+        "count": 300,
+        "max": 4.386,
+        "mean": 3.061,
+        "median": 2.993,
+        "min": 2.4,
+        "p50": 2.993,
+        "p95": 3.784,
+        "p99": 3.977,
+        "std": 0.367
+      },
+      "inter_agent_guard_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "llm_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "normalization_ms": {
+        "count": 300,
+        "max": 0.616,
+        "mean": 0.262,
+        "median": 0.252,
+        "min": 0.172,
+        "p50": 0.252,
+        "p95": 0.363,
+        "p99": 0.425,
+        "std": 0.055
+      },
+      "policy_ms": {
+        "count": 300,
+        "max": 0.031,
+        "mean": 0.011,
+        "median": 0.01,
+        "min": 0.006,
+        "p50": 0.01,
+        "p95": 0.016,
+        "p99": 0.027,
+        "std": 0.004
+      },
+      "rules_ms": {
+        "count": 300,
+        "max": 0.232,
+        "mean": 0.116,
+        "median": 0.115,
+        "min": 0.056,
+        "p50": 0.115,
+        "p95": 0.171,
+        "p99": 0.216,
+        "std": 0.035
+      },
+      "scoring_ms": {
+        "count": 300,
+        "max": 0.052,
+        "mean": 0.016,
+        "median": 0.016,
+        "min": 0.009,
+        "p50": 0.016,
+        "p95": 0.024,
+        "p99": 0.035,
+        "std": 0.006
+      },
+      "semantic_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      },
+      "tool_ms": {
+        "count": 75,
+        "max": 0.02,
+        "mean": 0.011,
+        "median": 0.01,
+        "min": 0.009,
+        "p50": 0.01,
+        "p95": 0.016,
+        "p99": 0.019,
+        "std": 0.002
+      },
+      "tool_output_guard_ms": {
+        "count": 0,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "p50": null,
+        "p95": null,
+        "p99": null,
+        "std": null
+      }
+    },
+    "total": {
+      "count": 300,
+      "max": 5.359,
+      "mean": 3.559,
+      "median": 3.503,
+      "min": 2.763,
+      "p50": 3.503,
+      "p95": 4.339,
+      "p99": 4.675,
+      "std": 0.422
+    }
+  },
+  "provider_runtime": {
+    "active_provider": "fallback",
+    "active_status": "demo_fallback",
+    "mode": "demo",
+    "model": null,
+    "provider": "fallback",
+    "providers": {
+      "gemini": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "gemini-1.5-flash",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "groq": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "llama-3.3-70b-versatile",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "ollama": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "openai": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "gpt-4o-mini",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      }
+    },
+    "real_llm": false
+  },
+  "raw_files": {
+    "baseline": {
+      "path": "performance_quality\\raw_results\\BASELINE_NO_AGENTSHIELD.jsonl",
+      "sha256": "eb89e2f76022443510db51ffda6b5011ed8ba05bb772b294861e826364d16a65"
+    },
+    "protected": {
+      "path": "performance_quality\\raw_results\\FULL_AGENTSHIELD.jsonl",
+      "sha256": "f66872a20517d68b5f90407f86fbd2513a3248ba6054a3340601d4a6fc9632fb"
+    }
+  },
+  "safe_sandbox": true,
+  "schema_version": "phase16-performance-summary-v1",
+  "seed": 20250916,
+  "semantic_runtime": {
+    "classification": "SEMANTIC_UNAVAILABLE",
+    "error": "probe_timeout",
+    "probe_ms": 12002.785,
+    "ready": false,
+    "status": "unavailable"
+  },
+  "steady_state_repetitions_per_sample": 25,
+  "traceability": {
+    "metric_source": "raw JSONL; no manually entered measurements",
+    "raw_manifest": "performance_quality\\raw_results\\performance_run_manifest.json"
+  },
+  "warmup_requests_per_configuration": 24
+}

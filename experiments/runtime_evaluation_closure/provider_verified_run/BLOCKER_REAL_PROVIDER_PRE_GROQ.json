@@ -1,0 +1,59 @@
+{
+  "provider": {
+    "active_provider": "fallback",
+    "active_status": "demo_fallback",
+    "mode": "demo",
+    "ollama_runtime_probe": {
+      "error": "ollama_executable_not_found_and_port_unreachable",
+      "executable": null,
+      "models": [],
+      "reachable": false
+    },
+    "providers": {
+      "gemini": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "gemini-1.5-flash",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "groq": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "llama-3.3-70b-versatile",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "ollama": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      },
+      "openai": {
+        "configured": false,
+        "fallback_reason": "provider_not_configured",
+        "mode": "demo",
+        "model": "gpt-4o-mini",
+        "real_llm": false,
+        "runtime_verified": false,
+        "status": "not_configured",
+        "timeout_seconds": 20.0
+      }
+    },
+    "real_llm": false,
+    "selected_provider": "fallback",
+    "support_note": "Provider status is configuration-only until an explicit validation probe or successful chat completion."
+  },
+  "reason": "No runtime-verified real provider is available. No OpenAI, Gemini, Groq, or Ollama credential/model is configured. Ollama executable was not found and localhost:11434 is unreachable.",
+  "status": "PARTIAL"
+}

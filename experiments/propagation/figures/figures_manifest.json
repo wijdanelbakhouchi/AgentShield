@@ -1,0 +1,11 @@
+{
+  "figures": {
+    "adaptive_vs_non": "figures/adaptive_vs_non.png",
+    "asr_by_config": "figures/asr_by_config.png",
+    "blocked_at": "figures/blocked_at.png",
+    "category_heatmap": "figures/category_heatmap.png",
+    "detection_pr": "figures/detection_pr.png",
+    "propagation_depth": "figures/propagation_depth.png",
+    "propagation_rate_depth": "figures/propagation_rate_depth.png"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "FULL_NO_SEMANTIC",
+  "gateway": true,
+  "inter_agent": true,
+  "tool_security": true,
+  "semantic": false,
+  "provenance": false,
+  "policy_mode": "score_threshold",
+  "alert_only": false,
+  "notes": "Full AgentShield minus the sentence-embedding detector (ablation: embedding tier)."
+}
